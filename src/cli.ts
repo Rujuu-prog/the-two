@@ -63,14 +63,14 @@ async function runDefault(
 ): Promise<void> {
   print(DEFAULT_ART);
   print("\n");
-  print("[just2] Booting addition engine v2.0...\n");
+  print("[the-two] Booting addition engine v2.0...\n");
   await delay();
-  print("[just2] Seeding entropy...\n");
-  print(`[just2] ${pick(LOADING_CONSTANTS)}\n`);
-  print(`[just2] ${pick(ALGORITHM_SELECTION)}\n`);
-  print(`[just2] ${pick(WARMUP_MESSAGES)}\n`);
+  print("[the-two] Seeding entropy...\n");
+  print(`[the-two] ${pick(LOADING_CONSTANTS)}\n`);
+  print(`[the-two] ${pick(ALGORITHM_SELECTION)}\n`);
+  print(`[the-two] ${pick(WARMUP_MESSAGES)}\n`);
   await delay();
-  print("[just2] Running computation...\n");
+  print("[the-two] Running computation...\n");
   print("\n");
   print("┌─ Computation Trace ────────────────────\n");
   print("│ input.a = 1\n");
@@ -88,7 +88,7 @@ async function runVerbose(
   print: (s: string) => void,
   delay: (ms?: number) => Promise<void>,
 ): Promise<void> {
-  print("[just2] Verbose mode enabled\n");
+  print("[the-two] Verbose mode enabled\n");
   print(VERBOSE_ART);
   print("\n");
 
