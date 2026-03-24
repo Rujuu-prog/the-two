@@ -1,0 +1,40 @@
+{
+  "name": "just-two",
+  "version": "1.0.0",
+  "description": "The most over-engineered way to calculate 1 + 1.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "bin": {
+    "just-two": "./dist/bin/just-two.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write ."
+  },
+  "keywords": [
+    "1+1",
+    "over-engineered",
+    "cli",
+    "joke"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.8",
+    "@types/node": "^25.5.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.5.3",
+    "vitest": "^3.0.0"
+  }
+}
